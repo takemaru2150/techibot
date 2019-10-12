@@ -24,8 +24,12 @@ LINEアプリへのQRコード
 ### ボットサーバの開発
 - LINE Developersからチャネルの開設してChannel Secretとアクセストークンを取得
 - Heroku上のREST APIをLINE BOTのWebhookに反応できるように修正
+    - 署名を検証する
+    - さっと200番を返す
+    - 応答メッセージを送る
 - LINE DevelopersでREST APIのURLをWebhookとして設定
 
+## 説明
 ### Messaging APIの仕組み
 Messaging APIを使って、ボットサーバーとLINEプラットフォームの間でデータを交換できます。リクエストは、JSON形式でHTTPSを使って送信されます。
 
@@ -37,6 +41,8 @@ Messaging APIを使って、ボットサーバーとLINEプラットフォーム
 > [公式より](https://developers.line.biz/ja/docs/messaging-api/overview/)
 
 
+## 参考記事
+[LINE BOTをHeroku + Node.jsでやるまで](https://qiita.com/TakuTaku04/items/cb71f10669a9e9cbf71b)
 
 --- 
 
