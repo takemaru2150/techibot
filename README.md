@@ -1,14 +1,29 @@
 # techibot
-LINEBOTの開発を行いました。
+LINE Botの開発を行いました。
 
  ## 仕様
 - 名称：「てちbot」
-- 使用言語・ツール：node.js、HEROKU、git、LINE Developers
+- 使用言語・ツール：node.js、Heroku、git、LINE Developers
 - 開発環境：Windows10
 
 ## 機能
 - 友達追加時にメッセージ「友だち追加ありがとうございます」「(username)さん！よろしくね！！」
 - 自動返信
+
+## やったこと
+- Messaging API
+- LINE Developersからチャネルの開設してChannel Secretとアクセストークンを取得
+- Heroku上のREST APIをLINE BOTのWebhookに反応できるように修正
+- LINE DevelopersでREST APIのURLをWebhookとして設定
+
+### Messaging APIの仕組み
+Messaging APIを使って、ボットサーバーとLINEプラットフォームの間でデータを交換できます。リクエストは、JSON形式でHTTPSを使って送信されます。
+
+1. ユーザーが、LINE公式アカウントにメッセージを送信します。
+2. LINEプラットフォームからボットサーバーのWebhook URLに、Webhookイベントが送信されます。
+3. Webhookイベントに応じて、ボットサーバーからユーザーにLINEプラットフォームを介して応答します。
+
+![Messaging APIの仕組み](https://developers.line.biz/media/messaging-api/overview/messaging-api-architecture-cffb1d9b.png) "Messaging APIの仕組み")
 
 ボットサーバとして使うサーバ環境はherokuインスタンスを利用しています。
 [公式ドキュメント](https://devcenter.heroku.com/articles/getting-started-with-nodejs)を参考にnode.jsアプリをherokuにデプロイし、サーバ環境の準備をしました。
