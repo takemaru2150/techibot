@@ -23,7 +23,10 @@ Messaging APIを使って、ボットサーバーとLINEプラットフォーム
 2. LINEプラットフォームからボットサーバーのWebhook URLに、Webhookイベントが送信されます。
 3. Webhookイベントに応じて、ボットサーバーからユーザーにLINEプラットフォームを介して応答します。
 
-![Messaging APIの仕組み](https://developers.line.biz/media/messaging-api/overview/messaging-api-architecture-cffb1d9b.png) "Messaging APIの仕組み")
+![Messaging APIの仕組み](https://developers.line.biz/media/messaging-api/overview/messaging-api-architecture-cffb1d9b.png)
+> [公式より](https://developers.line.biz/ja/docs/messaging-api/overview/)
+
+--- 
 
 ボットサーバとして使うサーバ環境はherokuインスタンスを利用しています。
 [公式ドキュメント](https://devcenter.heroku.com/articles/getting-started-with-nodejs)を参考にnode.jsアプリをherokuにデプロイし、サーバ環境の準備をしました。
