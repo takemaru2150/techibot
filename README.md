@@ -1,5 +1,10 @@
-# techibot
+# てちbot
+（開発日：2019年10月8日）
 LINE Botの開発を行いました。
+
+LINEアプリへのQRコード
+![linebot_QRコード](https://user-images.githubusercontent.com/50776559/66699184-6d98a480-ed1f-11e9-9c81-8c9e915fbfe0.png)
+
 
  ## 仕様
 - 名称：「てちbot」
@@ -11,7 +16,12 @@ LINE Botの開発を行いました。
 - 自動返信
 
 ## やったこと
-- Messaging API
+### 準備
+- LINEアカウント用意
+- Node.jsとHerokuの準備（参照：[公式ドキュメント](https://developers.line.biz/ja/docs/messaging-api/overview/)）
+- LINE Developersの[Messaging API](https://developers.line.biz/ja/services/messaging-api/)を始める
+
+### ボットサーバの開発
 - LINE Developersからチャネルの開設してChannel Secretとアクセストークンを取得
 - Heroku上のREST APIをLINE BOTのWebhookに反応できるように修正
 - LINE DevelopersでREST APIのURLをWebhookとして設定
@@ -25,6 +35,8 @@ Messaging APIを使って、ボットサーバーとLINEプラットフォーム
 
 ![Messaging APIの仕組み](https://developers.line.biz/media/messaging-api/overview/messaging-api-architecture-cffb1d9b.png)
 > [公式より](https://developers.line.biz/ja/docs/messaging-api/overview/)
+
+
 
 --- 
 
