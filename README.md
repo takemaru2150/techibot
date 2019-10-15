@@ -2,11 +2,11 @@
 （開発日：2019年10月8日）
 LINE Botの開発を行いました。
 
+URLはこちらhttp://nav.cx/bTzOWAZ
+
 LINEアプリへのQRコード
 
 ![linebot_QRコード](https://user-images.githubusercontent.com/50776559/66699184-6d98a480-ed1f-11e9-9c81-8c9e915fbfe0.png)
-
-URLはこちらhttp://nav.cx/bTzOWAZ
 
 
  ## 仕様
@@ -14,15 +14,18 @@ URLはこちらhttp://nav.cx/bTzOWAZ
 - 使用言語・ツール：node.js、Heroku、git、LINE Developers
 - 開発環境：Windows10
 
+
 ## 機能
 - 友達追加時にメッセージ「友だち追加ありがとうございます」「(username)さん！よろしくね！！」
 - 自動返信
+
 
 ## やったこと
 ### 準備
 - LINEアカウント用意
 - Node.jsとHerokuの準備（参照：[公式ドキュメント](https://developers.line.biz/ja/docs/messaging-api/overview/)）
 - LINE Developersの[Messaging API](https://developers.line.biz/ja/services/messaging-api/)を始める
+
 
 ### ボットサーバの開発
 - LINE Developersからチャネルの開設してChannel Secretとアクセストークンを取得
@@ -31,6 +34,7 @@ URLはこちらhttp://nav.cx/bTzOWAZ
     - さっと200番を返す
     - 応答メッセージを送る
 - LINE DevelopersでREST APIのURLをWebhookとして設定
+
 
 ## 説明
 ### Messaging APIの仕組み
@@ -47,11 +51,17 @@ Messaging APIを使って、ボットサーバーとLINEプラットフォーム
 ## 参考記事
 [LINE BOTをHeroku + Node.jsでやるまで](https://qiita.com/TakuTaku04/items/cb71f10669a9e9cbf71b)
 
+
+
 --- 
+
+
 
 ボットサーバとして使うサーバ環境はherokuインスタンスを利用しています。
 [公式ドキュメント](https://devcenter.heroku.com/articles/getting-started-with-nodejs)を参考にnode.jsアプリをherokuにデプロイし、サーバ環境の準備をしました。
+
 以下はその際のREADMEです。
+
 
 # node-js-getting-started
 
